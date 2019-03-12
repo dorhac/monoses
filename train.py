@@ -314,7 +314,7 @@ def induce_phrase_table(args):
              ' --parallel ' + str(args.threads) + ' -T ' + quote(args.tmp) +
              ' ' + quote(args.tmp + '/' + part + '.phrase-table') +
              ' | gzip > ' + quote(root + '/' + part + '.phrase-table.gz'))
-        os.remove(args.tmp + '/' + part + '.phrase-table')
+        #os.remove(args.tmp + '/' + part + '.phrase-table')
 
 
 # Step 6: Build initial model
